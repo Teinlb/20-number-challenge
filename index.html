@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 number challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="title">20 number challenge</h1>
+            <div class="best_move">
+                <label class="label">BEST-MOVE</label>
+                <input id="best_move" class="checkbox" type="checkbox" readonly>
+            </div>
+            <div class="autogenerate">
+                <label for="autogenerate" class="label">AUTO-GENERATE: </label>
+                <input type="checkbox" id="autogenerate" class="checkbox">
+            </div>
+            <p id="restart" class="restart" onclick="restart()">RESTART</p>
+        </nav>
+    </header>
+    <main>
+        <div class="input">
+            <div class="displays">
+                <div class="wrapper">
+
+                    <input type="number" id="number1" class="number" onclick="changeValue(1, false)" placeholder="1" readonly>
+
+                    <input type="number" id="number2" class="number" onclick="changeValue(2, false)" placeholder="2" readonly>
+
+                    <input type="number" id="number3" class="number" onclick="changeValue(3, false)" placeholder="3" readonly>
+
+                    <input type="number" id="number4" class="number" onclick="changeValue(4, false)" placeholder="4" readonly>
+
+                    <input type="number" id="number5" class="number" onclick="changeValue(5, false)" placeholder="5" readonly>
+
+                    <input type="number" id="number6" class="number" onclick="changeValue(6, false)" placeholder="6" readonly>
+
+                    <input type="number" id="number7" class="number" onclick="changeValue(7, false)" placeholder="7" readonly>
+
+                    <input type="number" id="number8" class="number" onclick="changeValue(8, false)" placeholder="8" readonly>
+
+                    <input type="number" id="number9" class="number" onclick="changeValue(9, false)" placeholder="9" readonly>
+
+                    <input type="number" id="number10" class="number" onclick="changeValue(10, false)" placeholder="10" readonly>
+
+                    <input type="number" id="number11" class="number" onclick="changeValue(11, false)" placeholder="11" readonly>
+
+                    <input type="number" id="number12" class="number" onclick="changeValue(12, false)" placeholder="12" readonly>
+
+                    <input type="number" id="number13" class="number" onclick="changeValue(13, false)" placeholder="13" readonly>
+
+                    <input type="number" id="number14" class="number" onclick="changeValue(14, false)" placeholder="14" readonly>
+
+                    <input type="number" id="number15" class="number" onclick="changeValue(15, false)" placeholder="15" readonly>
+
+                    <input type="number" id="number16" class="number" onclick="changeValue(16, false)" placeholder="16" readonly>
+
+                    <input type="number" id="number17" class="number" onclick="changeValue(17, false)" placeholder="17" readonly>
+
+                    <input type="number" id="number18" class="number" onclick="changeValue(18, false)" placeholder="18" readonly>
+
+                    <input type="number" id="number19" class="number" onclick="changeValue(19, false)" placeholder="19" readonly>
+
+                    <input type="number" id="number20" class="number" onclick="changeValue(20, false)" placeholder="20" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="generator">
+            <div class="displays">
+                <div class="generator">
+                    <p id="generated_number">0</p>
+                    <button id="generate" class="button" onclick="generate()">GENERATE</button>
+                </div>
+                <div class="score_display">
+                    <label class="label">SCORE: </label>
+                    <input id="score" class="score" type="number" value="0" readonly>
+
+                    <label class="label">HIGH-SCORE: </label>
+                    <input id="high_score" class="score" type="number" value="0" readonly>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

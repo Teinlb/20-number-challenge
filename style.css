@@ -1,0 +1,168 @@
+html{
+    background-color: rgb(0, 0, 0);
+    text-align:center;
+    font-family: "Montserrat";
+    color:white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    .title{
+        margin: 0;
+        padding: 14px 16px;
+    }
+    .restart{
+        margin: 0;
+        padding: 14px 16px;
+        cursor:pointer;
+    }
+    .best_move{
+        position:absolute;
+        left:16px;
+        top:16px;
+        display: flex;
+        align-items: center;
+        .label{
+            font-style: italic;
+        }
+        .checkbox{
+            margin-left:8px;
+            cursor:pointer;
+        }
+    }
+    .autogenerate{
+        position:absolute;
+        right:16px;
+        top:16px;
+        display: flex;
+        align-items: center;
+        .label{
+            font-style: italic;
+        }
+        .checkbox{
+            margin-left:8px;
+            cursor:pointer;
+        }
+    }
+}
+
+main{
+    display:flex;
+    .input{
+        flex: 40%;
+        margin: 0 5%;
+        background-color:rgb(37, 37, 37);
+        border-radius:10px;
+        .displays{
+            background-color: black;
+            border-radius:25px;
+            width: 80%;
+            padding:2em;
+            margin: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;          
+            .wrapper{
+                text-align: center;
+                .number{
+                    display:block;
+                    margin-bottom:10px;
+                    margin-left:30%;
+                    font-size:large;
+                    width:40%;
+                    color:black;
+                    padding:4px;
+                    border:none;
+                    border-radius: 25px;
+                    text-align: center;
+                    box-shadow: inset 4px 4px 8px rgba(81, 86, 94, 2);
+                }
+                .number:hover{
+                    cursor: pointer;
+                }
+                .number::placeholder{
+                    font-size:small;
+                    opacity:0.7;
+                }
+                .number::-webkit-inner-spin-button,
+                .number::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+            }
+        }
+    }
+    .generator{
+        flex: 40%;
+        margin: 0 5%;
+        background-color:rgb(37, 37, 37);
+        border-radius:10px;
+        .displays{
+
+            .generator{
+                background-color: black;
+                border-radius:25px;
+                padding:2em;
+                width: 80%;
+                margin:2em;
+                #generated_number{
+                    font-weight: 1000;
+                    font-size:50px;
+                    background-color: black;
+                    border-radius: 15px;
+                    max-width: 90%;
+                    margin-left: 5%;
+                    padding-top:50px;
+                    padding-bottom:50px;
+                }
+                .button{
+                    padding-left:20%;
+                    padding-right:20%;
+                    padding-top:4%;
+                    padding-bottom:4%;
+                    border-radius: 25px;
+                    margin-bottom:2%;
+                    width:50%;
+                    background-color: rgb(245, 245, 245);
+                }
+                .button:hover{
+                    cursor:pointer;
+                    transition:.6s ease all;
+                    transform: scale(.9);
+                }
+            }
+            .score_display{
+                background-color: black;
+                border-radius:25px;
+                padding:2em;
+                width: 80%;
+                margin:2em;
+                .label{
+                    padding-right: 4px;
+                }
+                .score{
+                    width:20%;
+                    color:black;
+                    padding:16px 4px;
+                    border-radius: 25px;
+                    border: none;
+                    text-align: center;
+                }
+                .score:hover{
+                    cursor:pointer
+
+                }
+                .score::-webkit-inner-spin-button,
+                .score::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                #score{
+                    margin-right:20%;
+                }
+            }
+        }
+    }
+}
