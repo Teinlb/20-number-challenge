@@ -166,3 +166,13 @@ main{
         }
     }
 }
+
+footer p{
+  padding-top:1%;
+  padding-bottom:1%;
+  color:white;
+  text-decoration: none;
+  font-size:large;
+  padding-left:10px;
+  padding-right:10px;
+}
